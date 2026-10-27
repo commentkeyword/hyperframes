@@ -3,13 +3,13 @@
   "name": "comment-cta",
   "type": "hyperframes:block",
   "title": "Comment Keyword CTA",
-  "description": "Vertical comment-to-get call to action: 'Comment GUIDE' lands with a bouncing arrow, the keyword types into a comment box, Post presses and the comment appears with a like. Keyword, handle, promise line, colors and placement are variables; everything stays inside the 9:16 safe zone",
-  "tags": ["social", "cta", "comments", "overlay", "vertical", "creator"],
+  "description": "Vertical comment-to-get call to action: 'Comment GUIDE' lands with a bouncing arrow, the keyword types into a comment box, Post presses and the comment appears, then the promised direct message arrives. Keyword, handle, promise line, message, colors and placement are variables; everything stays inside the 9:16 safe zone",
+  "tags": ["social", "cta", "comments", "dm", "overlay", "vertical", "creator"],
   "dimensions": {
     "width": 1080,
     "height": 1920
   },
-  "duration": 6,
+  "duration": 7,
   "variables": [
     {
       "id": "keyword",
@@ -40,7 +40,7 @@
       "type": "string",
       "role": "content",
       "label": "Creator handle",
-      "description": "Account named in the comment box placeholder.",
+      "description": "Account named in the comment box placeholder and as the sender of the direct message.",
       "default": "@yourhandle"
     },
     {
@@ -52,11 +52,19 @@
       "default": "you"
     },
     {
+      "id": "message",
+      "type": "string",
+      "role": "content",
+      "label": "Direct message",
+      "description": "The message that arrives after the comment is posted, delivering the promise. Leave empty to end on the posted comment.",
+      "default": "Here is your free guide"
+    },
+    {
       "id": "accent",
       "type": "color",
       "role": "style",
       "label": "Accent",
-      "description": "Keyword pill, caret and Post label.",
+      "description": "Keyword pill, caret, Post label and message icon.",
       "default": "#0a84ff"
     },
     {
@@ -64,7 +72,7 @@
       "type": "color",
       "role": "style",
       "label": "Card color",
-      "description": "Background of the comment box and the posted comment.",
+      "description": "Background of the comment box, the posted comment and the message.",
       "default": "#ffffff"
     },
     {
@@ -72,7 +80,7 @@
       "type": "color",
       "role": "style",
       "label": "Text color",
-      "description": "Text inside the comment box and the posted comment.",
+      "description": "Text inside the comment box, the posted comment and the message.",
       "default": "#111111"
     },
     {
